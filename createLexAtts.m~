@@ -1,0 +1,7 @@
+function attsLex = createLexAtts( )
+%UNTITLED8 Summary of this function goes here
+%   Detailed explanation goes here
+load(fullfile('model','SVT_lexicon_PHOCs_l2345_lb2_nb50.mat',dataset)));
+
+end
+

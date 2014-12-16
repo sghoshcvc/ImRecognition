@@ -1,0 +1,13 @@
+libReadImInitialize
+libReadImInitializeWithHandlers
+libReadImTerminate
+libReadImPrintStackTrace
+mlxRead_im
+read_im
+mlxImg2attr
+img2attr
+mlxAttWindows
+AttWindows
+mlxCreateLexAtts
+createLexAtts
+

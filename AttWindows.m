@@ -3,7 +3,9 @@ function  attsWin  = AttWindows(windows,atts,N,D )
 %   Detailed explanation goes here
 Blocksize =16;
 embeddingInt = readCCA(fullfile('model','CCA.bin'));
- windows = [ceil(windows(:,1)/Blocksize)+1 ceil(windows(:,2)/Blocksize)+1 ceil(windows(:,3)/Blocksize)+1 ceil(windows(:,4)/Blocksize)+1];
+windows =[windows(:,1)+1 windows(:,2)+1 windows(:,3)+1 windows(:,4)+1];
+windows = double(windows);
+ windows = [ceil(windows(:,1)/Blocksize) ceil(windows(:,2)/Blocksize) ceil(windows(:,3)/Blocksize) ceil(windows(:,4)/Blocksize)];
  ImageNorm = zeros(N,D,'single');
  
  attsWin =Cal_feat_window( windows,atts,ImageNorm);

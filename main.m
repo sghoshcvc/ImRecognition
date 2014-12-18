@@ -1,5 +1,5 @@
 [W,H,im] =read_im('temp','00_02.jpg',1);
-attsLex =createLexAtts( );
+%attsLex =createLexAtts( );
 [a,b,c,d] =img2attr(im);
 
 candidates =read_windows();

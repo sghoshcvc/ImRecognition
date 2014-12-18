@@ -1,4 +1,4 @@
- #include "libReadIm.h"
+ #include "libImRecognition.h"
  #include<iostream>
  #include<stdio.h>
 int main(void)
@@ -14,7 +14,7 @@ int main(void)
     }
      
      
-if( !libReadImInitialize() )
+if( !libImRecognitionInitialize() )
     {
         std::cerr << "Could not initialize the library properly."
                   << std::endl;
@@ -97,7 +97,7 @@ if( !libReadImInitialize() )
 //printf('%d',B);
      /* Call the library termination function */
 
-    libReadImTerminate();
+    libImRecognitionTerminate();
       /*libvigenereTerminate();*/
     mclTerminateApplication();
     /*return B;*/
